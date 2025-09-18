@@ -1,0 +1,20 @@
+# config.yaml 示例
+
+# 其他已有的配置，比如 playwright 设置...
+playwright:
+  headless: true
+  slow_mo: 100
+
+# 1. SMTP 服务器配置 (核心)
+smtp:
+  host: "smtp.qq.com"        # SMTP服务器地址（以下以QQ邮箱为例）
+  port: 465                  # SSL加密端口 (通常是465或587)
+  user: "1378715331@qq.com"  # 你的发件邮箱地址
+  password: "vchhikaqphatbagb" # 注意：这里不是邮箱密码，是授权码！
+  ssl: true                  # 是否使用SSL加密 (通常是true)
+
+# 2. 通知设置
+notify:
+  enable: true               # 是否启用通知
+  to: "2206024009@qq.com" # 接收通知的邮箱地址（可以和你发件地址一样）
+  subject: "【每日签到报告】"   # 邮件的主题
